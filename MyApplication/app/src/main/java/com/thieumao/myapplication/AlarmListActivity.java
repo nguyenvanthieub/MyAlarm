@@ -13,7 +13,7 @@ import com.thieumao.myapplication.model.Contact;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class AlarmListActivity extends AppCompatActivity {
 
     private TimePicker timePicker;
     private ListView timeListview;
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_alarm_list);
         timeListview = (ListView) findViewById(R.id.timeListview);
         ArrayList<Contact> arrayList = new ArrayList<>();
         Contact contact1 = new Contact(Color.BLUE, "Nguyen Van Thieu", "0917 735 107");
