@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_item_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/item_alarm_padding">
+
+        <TextView
+            android:id="@+id/text_alarm_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sample_time"
+            android:textColor="@color/white"
+            android:textSize="@dimen/item_alarm_text_time_size"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switch_enable_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/item_alarm_switch_margin_right" />
+
+        <CheckBox
+            android:id="@+id/checkbox_select_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_break" />
+
+</LinearLayout>
